@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<!-- служебная часть -->
+
+<head>
+  <!-- заголовок страницы -->
+  <title>Адаптивная вёрстка на Бутстрапе</title>
+  <!-- настраиваем служебную информацию для браузеров -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- задаём CSS-стили прямо здесь же, чтобы всё было в одном файле -->
+  <style type="text/css">
+    img {
+      max-width: 100%;
+    }
+    body {
+        text-align: centr;
+        margin: 10;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 16px;
+    }
+    h1 {
+        margin-bottom: 50 px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 22px;
+         }
+
+         input {
+             display: inline-block;
+             margin: 20 px auto;
+             border: 2px solid #eee;
+             padding: 10px 20 px;
+             font-family: Verdana, Arial, sans-serif;
+             font-size: 16px;
+         }
+
+         .tdItem{
+             text-align: left;
+             padding: 10px;
+             cursor: default;
+             border-radius: 7px;
+             }
+    .tdItem:hover {
+        background-color: lightblue;
+    }         
+  </style>
+  <!-- закрываем служебную часть страницы -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Управление проектами, делами и собой</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <h2 class="todo__caption">Сделать</h2>
+        <!-- Сюда пишем задачи на сделать-->
+        <div id="tdl1App">
+          <input type="text" class="form-control" placeholder="Новая задача">
+          <!-- Empty list "to call -->
+          <div class="tdl1Div">
+            <ul class="List list-unstyled">
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <h2 class="todo__caption">Позвонить</h2>
+        <!-- Сюда пишем задачи на повзонить-->
+        <div id="tdl2App">
+          <input type="text" class="form-control" placeholder="Новая задача">
+          <!-- Empty list "to call -->
+          <div class="tdl2Div">
+            <ul class="List list-unstyled">
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <h2 class="todo__caption">Написать</h2>
+        <!-- Сюда пишем задачи на написать-->
+        <div id="tdl3App">
+          <input type="text" class="form-control" placeholder="Новая задача">
+          <!-- Empty list "to call -->
+          <div class="tdl3Div">
+            <ul class="List list-unstyled">
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+        <h2 class="todo__caption">Идеи</h2>
+        <!-- Сюда пишем идеи-->
+        <div id="tdl4App">
+          <input type="text" class="form-control" placeholder="Новая задача">
+          <!-- Empty list "to call -->
+          <div class="tdl4Div">
+            <ul class="List list-unstyled">
+              </ul>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
+</body>
+<!-- конец всей страницы -->
+
+</html>
